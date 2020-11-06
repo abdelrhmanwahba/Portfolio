@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Hire me - Wahba</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
+        <div class="container">@Html.ActionLink("Wahba", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            <button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse"
+                id="navbarNav">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item">@Html.ActionLink("Projects","Index","Projects", "", new { @class = "nav-link" })</li>
+                    <li class="nav-item">@Html.ActionLink("Add Project","AddProject","Projects", "", new { @class = "nav-link" })</li>
+                    <li class="nav-item">@Html.ActionLink("CV","CV","Projects", "", new { @class = "nav-link" })</li>
+                    <li class="nav-item"><a href=@Url.Action("skills","Home") class="nav-link">Skills</a></li>                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page hire-me-page">
+        @RenderBody()
+    </main>
+<footer>
+    <div class="row">
+        <div class="col-sm-6 col-md-4 footer-navigation">
+            <h3><a href="#">Wahba<span>.com</span></a></h3>
+            <p class="links"><a href="#">Home</a><strong> · </strong><a href="#"></a><strong></strong><a href="#">About</a><strong> · </strong><a href="#">Faq</a><strong> · </strong><a href="#">Contact</a></p>
+            <p class="company-name">Wahba © 2015 </p>
+        </div>
+        <div class="col-sm-6 col-md-4 footer-contacts">
+            <div><span class="fa fa-map-marker footer-contacts-icon"></span>
+                <p>Giza, Egypt</p>
+            </div>
+            <div><i class="fa fa-phone footer-contacts-icon"></i>
+                <p class="footer-center-info email text-left"> +20 01146830796</p>
+            </div>
+            <div><i class="fa fa-envelope footer-contacts-icon"></i>
+                <p><a href="mailto:abdelrahman.khaled6949@gmail.com" target="_blank">abdelrahman.khaled6949@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="col-md-4 footer-about">
+            <div class="social-links social-icons" style="margin: 22px;margin-top: 59px;"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-github"></i></a></div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+@RenderSection("scripts", required: false)
+</body>
+</html>

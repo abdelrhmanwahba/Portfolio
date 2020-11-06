@@ -1,0 +1,18 @@
+.organization {
+    font-size: .85em;
+    background-color: #0ea0ff;
+    display: inline-block;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 2em;
+}
+
+
+
+.field-validation-error {
+    color: red;
+}
+
+.input-validation-error {
+    border: 2px solid red;
+}

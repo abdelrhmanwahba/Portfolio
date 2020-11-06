@@ -195,6 +195,36 @@
     <Compile Include="ViewModels\ProjectFormViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\bootstrap\css\bootstrap.min.css" />
+    <Content Include="assets\bootstrap\js\bootstrap.min.js" />
+    <Content Include="assets\css\Footer-with-social-media-icons.css" />
+    <Content Include="assets\css\Pretty-Footer.css" />
+    <Content Include="assets\css\untitled.css" />
+    <Content Include="assets\fonts\font-awesome.min.css" />
+    <Content Include="assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\fonts\ionicons.min.css" />
+    <Content Include="assets\fonts\ionicons.svg" />
+    <Content Include="assets\img\avatars\avatar.jpg" />
+    <Content Include="assets\img\avatars\portfolio-285-692609.png" />
+    <Content Include="assets\img\avatars\wahba.jpg" />
+    <Content Include="assets\img\download.jpg" />
+    <Content Include="assets\img\nature\image1.jpg" />
+    <Content Include="assets\img\nature\image2.jpg" />
+    <Content Include="assets\img\nature\image3.jpg" />
+    <Content Include="assets\img\nature\image4.jpg" />
+    <Content Include="assets\img\nature\image5.jpg" />
+    <Content Include="assets\img\nature\image6.jpg" />
+    <Content Include="assets\img\nature\image7.jpg" />
+    <Content Include="assets\img\nature\image8.jpg" />
+    <Content Include="assets\img\nature\image9.jpg" />
+    <Content Include="assets\img\nature\Screenshot 2020-10-26 142843.png" />
+    <Content Include="assets\img\oho search.png" />
+    <Content Include="assets\img\Screenshot 2020-11-02 094050.png.jpg" />
+    <Content Include="assets\img\tech\image4.jpg" />
+    <Content Include="assets\img\tech\image6.png" />
+    <Content Include="assets\js\bs-init.js" />
+    <Content Include="assets\js\jquery.min.js" />
+    <Content Include="assets\js\theme.js" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -205,6 +235,14 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="assets\fonts\FontAwesome.otf" />
+    <Content Include="assets\fonts\ionicons.eot" />
+    <Content Include="assets\fonts\ionicons.ttf" />
+    <Content Include="assets\fonts\ionicons.woff" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -252,6 +290,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Projects\Index.cshtml" />
     <Content Include="Views\Projects\AddProject.cshtml" />
+    <Content Include="Views\Shared\Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
