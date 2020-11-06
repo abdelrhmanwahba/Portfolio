@@ -9,11 +9,9 @@
 
 
 
-.field-validation-error {
-    color: red;
-    border: 2px solid red
-}
 
-.input-validation-error {
-    border: 2px solid red;
+.field-validation-error ,.input-validation-error{
+    color: red;
+    
+    
 }
