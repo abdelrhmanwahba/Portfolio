@@ -8,7 +8,12 @@ namespace Portfolio
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
+                        // "~/Scripts/jquery-{version}.js"
+                        "~/assets/js/jquery.min.js",
+                        "~/assets/js/bs-init.js",
+                        "~/assets/js/theme.js"
+
+                        ));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
@@ -19,11 +24,18 @@ namespace Portfolio
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js"));
-
+                      // "~/Scripts/bootstrap.js"
+                      "~/assets/bootstrap/js/bootstrap.min.js"
+                      ));
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/Site.css"));
+                "~/assets/css/untitled.css",
+                "~/assets/css/Pretty-Footer.css",
+                "~/assets/css/Footer-with-social-media-icons.css",
+                "~/assets/bootstrap/css/bootstrap.min.css",
+                "~/assets/fonts/ionicons.min.css",
+                "~/assets/fonts/font-awesome.min.css"
+            ));
+
         }
     }
 }
