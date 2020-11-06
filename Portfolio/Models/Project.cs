@@ -2,7 +2,7 @@
 
 namespace Portfolio.Models
 {
-    public class Portfolio
+    public class Project
     {
 
         public byte Id { get; set; }
