@@ -50,5 +50,11 @@ namespace Portfolio.Controllers
 
             return View("index");
         }
+
+        public ActionResult CV()
+        {
+
+            return View(); 
+        }
     }
 }
