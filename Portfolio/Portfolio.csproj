@@ -171,6 +171,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\HireMeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ProjectsController.cs" />
@@ -185,8 +186,13 @@
     <Compile Include="Migrations\202011062107432_ProjectMigration.Designer.cs">
       <DependentUpon>202011062107432_ProjectMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202011070932165_HireMeEmails.cs" />
+    <Compile Include="Migrations\202011070932165_HireMeEmails.Designer.cs">
+      <DependentUpon>202011070932165_HireMeEmails.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\HireMe.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Project.cs" />
@@ -292,6 +298,7 @@
     <Content Include="Views\Projects\AddProject.cshtml" />
     <Content Include="Views\Projects\cv.cshtml" />
     <Content Include="Views\Home\index.cshtml" />
+    <Content Include="Views\HireMe\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -315,6 +322,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202011062107432_ProjectMigration.resx">
       <DependentUpon>202011062107432_ProjectMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011070932165_HireMeEmails.resx">
+      <DependentUpon>202011070932165_HireMeEmails.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
