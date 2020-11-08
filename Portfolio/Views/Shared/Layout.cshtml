@@ -22,14 +22,22 @@
         <div class="container">@Html.ActionLink("Wahba", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             <button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse"
-                id="navbarNav">
+                 id="navbarNav">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item">@Html.ActionLink("Projects","Index","Projects", "", new { @class = "nav-link" })</li>
-                    <li class="nav-item">@Html.ActionLink("Add Project","AddProject","Projects", "", new { @class = "nav-link" })</li>
-                    <li class="nav-item">@Html.ActionLink("CV","CV","Projects", "", new { @class = "nav-link" })</li>
-                    <li class="nav-item"><a href=@Url.Action("skills","Home") class="nav-link">Skills</a></li>                    
+
+                    <li class="nav-item">@Html.ActionLink("Projects", "Index", "Projects", "", new { @class = "nav-link" })</li>
+                    <li class="nav-item">@Html.ActionLink("CV", "CV", "Projects", "", new { @class = "nav-link" })</li>
+                    <li class="nav-item">@Html.ActionLink("hire", "HireMeForm", "HireMe", "", new { @class = "nav-link" })</li>
+                    <li class="nav-item"><a href=@Url.Action("skills","Home") class="nav-link">Skills</a></li>
+
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <li class="nav-item">@Html.ActionLink("Add Project", "AddProject", "Projects", "", new { @class = "nav-link" })</li>
+                        @Html.Partial("_LoginPartial")
+                    }
                 </ul>
-            </div>
+                    
+                </div>
         </div>
     </nav>
     <main class="page hire-me-page">

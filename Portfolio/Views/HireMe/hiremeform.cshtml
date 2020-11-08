@@ -1,0 +1,58 @@
+﻿@model Portfolio.Models.HireMe
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Hire me - Brand</title>
+    <meta property="" content="">
+
+</head>
+
+<body style="background: rgb(255,255,255);">
+    <main class="page hire-me-page">
+        <section class="portfolio-block hire-me">
+            <div class="container">
+                <div class="heading">
+                    <h2>Hire Me</h2>
+                </div>
+
+                @using (Html.BeginForm("Save", "HireMe", FormMethod.Post, new {enctype = "multipart/form-data"}))
+                {<p class="alert alert-info">All fields are <strong>required</strong></p>
+                <div class="form-group">
+                    @Html.LabelFor(m=>m.Subject)
+                    @Html.DropDownListFor(m=>m.Subject,new SelectList(ViewBag.Subjects,"Value","Text"),"Select Subject",new{@class="form-control"})
+                    @Html.ValidationMessageFor(m => m.Subject)
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.FroMailAddress)
+                    @Html.TextBoxFor(m=>m.FroMailAddress, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m=>m.FroMailAddress)
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Message)
+                    @Html.TextAreaFor(m => m.Message, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m=>m.Message)
+
+                </div>
+                <div class="form-group">
+                    <div class="form-row">
+                        @* <div class="col-md-6 button"><input class="form-control" type="date"></div> *@
+                        <div class="col"><button class="btn btn-primary btn-block" type="submit">Save</button></div>
+                    </div>
+                </div>
+                }
+            </div>
+        </section>
+    </main>
+
+</body>
+
+
+@section scripts
+{
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+</html>
